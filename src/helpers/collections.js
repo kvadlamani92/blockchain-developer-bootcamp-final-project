@@ -5,7 +5,7 @@ export const networkCollections = {
     {
       image: "https://ipfs.moralis.io:2053/ipfs/QmYvKechmn2wWBLXwz4ZvPBJmLxshe1RpeDPGAjSZhZbHd",
       name: "New Collection",
-      addrs: "0x23a85b53194Ce2ef8FF3b6233f856AEDb6D3062c",
+      addrs: "0xf2202297590BE49De573a81309fD165169024E07",
     },
     // Test collections
     {

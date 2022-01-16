@@ -1,23 +1,21 @@
 # NFT Marketplace dApp
-![Jaslist homepage](jaslist_homepage.png)
 
 ## Overview
 NFT marketplace created with Moralis and react-js framework. It is a place where one can create NFT, list it on marketplace and buy the available NFTs.
 
-### Live dApp Deployed on Polygon Mumbai network: [Jaslist](https://jaslist.netlify.app/)
+### Live dApp Deployed on Polygon Mumbai network: [NFTMarketplace](https://nft-marketplace-usemoralis.netlify.app/)
 
 Requirements: Metamask browser extension installed and connected to the Polygon Mumbai Test Network
 
-### dApp Walkthrough: [Jaslist Demo](https://www.loom.com/share/58bff5149fe349f0a0458167f144755d)
+### dApp Walkthrough: [NFTMarketplace Demo](https://www.loom.com/share/58bff5149fe349f0a0458167f144755d)
 
 ### Directory Structure
-- `contracts/` directory of smart contracts
-- `migrations/` directory of migration files
 - `public/` front end files
-- `reference_docs/` markdown files required for project submission
 - `src/` directory of abis and frontend react files
+- `contracts/` directory of contract files
+- `migrations/` directory of migration files
+- `scripts/` directory of script files to copy the smart contract abi to the front end location where the react components use it
 - `test/` directory of unit tests for smart contract
-
 ## Installing dApp Locally
 ### Development Environment Set Up to Run Project Locally (macOS or Linux System)
 1. Download a Code Editor (Visual Studio Code, Sublime, etc)
@@ -25,7 +23,7 @@ Requirements: Metamask browser extension installed and connected to the Polygon 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-3. Install [Node](https://nodejs.org/en/)
+3. Install [Node](https://nodejs.org/en/). Make sure the installed version is >= 17.0.1
 4. Install Git
 ```
 brew install git
@@ -44,41 +42,70 @@ npm install -g ganache-cli
 ### Running the Project Locally
 In the terminal, clone the project repository
 ```
-git clone https://github.com/jasminesabio/blockchain-developer-bootcamp-final-project
+git clone https://github.com/kvadlamani92/blockchain-developer-bootcamp-final-project.git
 ```
 
 In the terminal in the root directory of the project, install the dependecies
 ```
-npm install
+yarn install
 ```
 
 Set up a local blockchain by opening up Ganache GUI and quickstart a blockchain or run Ganache CLI with
 ```
-ganache-cli
+ganache-cli 
 ```
 
-In the terminal of the root directory of the project, run
+In the terminal, run
 ```
-truffle compile
-```
-
-Migrate the project to the local Ganache GUI blockchain by running 
-```
-truffle migrate
-```
-If running the Ganache CLI, run
-```
-truffle migrate --network ganachecli
+truffle compile --all
 ```
 
-To run the javascript tests, run
+To run the tests, run
 ```
 truffle test
 ```
 
-To run the frontend locally, run
+Create a .env file and add the following environment variable for the deployment to Polygon Mumbai testnet
 ```
-npm run start
+MNEMONIC=<paste_mnemonic_here>
+```
+
+Migrate the project to the Polygon Mumbai testnet and copy the ABI json files to the location where the react components can pick it up using
+```
+node scripts/deployContract.js
+```
+
+✏ Provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)) in the .env file created in the above step
+Example:
+```
+REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
+REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.usemoralis.com:2053/server
+```
+
+🔎 Locate the MoralisDappProvider in `src/providers/MoralisDappProvider/MoralisDappProvider.js` and contract address and ABI are automatically populated from the `src/contracts/contractInfo.json`
+```
+const [contractABI, setContractABI] = useState();
+const [marketAddress, setMarketAddress] = useState();
+```
+
+🔃 Sync the `MarketItemCreated` event in `contracts/NFTMarketplace.sol` contract with your Moralis Server by specifying the contract address and with the tableName `MarketItems`. Please watch this short 4min video on syncing the event with moralis server: `https://www.youtube.com/watch?v=LMqqxkuo7b0`
+```
+event MarketItemCreated (
+  uint indexed itemId,
+  address indexed nftContract,
+  uint256 indexed tokenId,
+  address seller,
+  address owner,
+  uint256 price,
+  bool sold
+);
+```
+- Update the `addrs` field in the `New Collection` present in `src/helpers/collections.js` with the new contract address after the latest contract deployment of `contracts/NFTContract.sol` for the marketplace to fetch NFTs belonging to this contract.
+
+🚴‍♂️ To run the frontend locally, go to the project root directory and run
+
+```
+yarn start
 ```
 
 Follow the instructions on this [post](https://medium.com/@kacharlabhargav21/using-ganache-with-remix-and-metamask-446fe5748ccf) to connect Ganache with Metamask. Once connected, you'll be able to interact with the front-end of the dApp.
@@ -100,55 +127,5 @@ Follow the instructions on this [post](https://medium.com/@kacharlabhargav21/usi
 - [x] Clear instructions in README.md file to install dependencies, access and run project, and running smart contract unit tests\
 - [x] Screencast of project walkthrough
 
-
-## Next Steps
-- Implement tickets listed as ERC-721 tokens
-- Add functionality for sellers (update ticket price, remove ticket from tickets available to be sold)
-- Integrate off-chain ticket transfer
-- Fetch list of tickets owned by user
-- Sort listed ticket items and add filtering functionality
-- Add dynamic images for each ticket
-
-## Public Ethereum Account
+## Public Ethereum Address 
 0xc90Cc5C9cae5084b7d1337C22747E1cE896CDce5
-
-
-💿 Install all dependencies:
-```sh
-cd blockchain-developer-bootcamp-final-project
-yarn install 
-```
-✏ Provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)) 
-Example:
-```
-REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
-REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.usemoralis.com:2053/server
-```
-
-🔎 Locate the MoralisDappProvider in `src/providers/MoralisDappProvider/MoralisDappProvider.js` and contract address and ABI are automatically populated from the `src/contracts/contractInfo.json`
-```
-const [contractABI, setContractABI] = useState();
-const [marketAddress, setMarketAddress] = useState();
-```
-
-🔃 Sync the `MarketItemCreated` event `/src/contracts/NFTMarketplace.sol` contract with your Moralis Server, making the tableName `MarketItems`
-```jsx
-event MarketItemCreated (
-  uint indexed itemId,
-  address indexed nftContract,
-  uint256 indexed tokenId,
-  address seller,
-  address owner,
-  uint256 price,
-  bool sold
-);
-```
-
-
-🚴‍♂️ Run your App:
-```
-yarn start
-```
-Public ETH address: 0xc90Cc5C9cae5084b7d1337C22747E1cE896CDce5
-
-
