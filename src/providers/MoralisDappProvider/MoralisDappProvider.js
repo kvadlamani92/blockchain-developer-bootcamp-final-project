@@ -5,7 +5,7 @@ import nftMarketplaceContractABI from "../../contracts/contractInfo.json";
 import nftContractABI from "../../contracts/nftContractInfo.json";
 
 function MoralisDappProvider({ children }) {
-  const nftMarketplaceContractAddress = Object.values(nftMarketplaceContractABI.networks)[1].address;
+  const nftMarketplaceContractAddress = Object.values(nftMarketplaceContractABI.networks)[0].address;
   console.log('marketplace contract address:',nftMarketplaceContractAddress);
 
   const nftContractAddress = Object.values(nftContractABI.networks)[0].address;

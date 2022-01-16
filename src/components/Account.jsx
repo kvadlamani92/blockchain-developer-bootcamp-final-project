@@ -33,7 +33,7 @@ function Account() {
     return (
       <div
         style={styles.account}
-        onClick={() => authenticate({ signingMessage: "Hello World!" })}
+        onClick={() => authenticate({ signingMessage: "Please authenticate using the wallet to access the Marketplace" })}
       >
         <p style={styles.text}>Authenticate</p>
       </div>

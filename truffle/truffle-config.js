@@ -1,6 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider")
 require('dotenv').config();
-console.log(process.env.MNEMONIC);
 module.exports = {
   // Uncommenting the defaults below
   // provides for an easier quick-start with Ganache.

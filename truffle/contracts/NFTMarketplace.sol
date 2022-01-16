@@ -122,9 +122,9 @@ contract NFTMarketplace is Initializable, OwnableUpgradeable, ReentrancyGuardUpg
         bool sold = idToMarketItem[_itemId].sold;
         require(msg.value == price, "Please submit the asking price in order to complete the purchase");
         require(sold != true, "This Sale has alredy finished");
-
-        idToMarketItem[_itemId].seller.transfer(msg.value);
-        IERC721(_nftContract).transferFrom(address(this), msg.sender, tokenId);
+        (bool sent,) = idToMarketItem[_itemId].seller.call{value: msg.value}("");
+        require(sent == true,"There is an error in transferring the funds to the seller");
+        IERC721(_nftContract).safeTransferFrom(address(this), msg.sender, tokenId);
         idToMarketItem[_itemId].owner = payable(msg.sender);
         _itemsSold.increment();
         idToMarketItem[_itemId].sold = true;

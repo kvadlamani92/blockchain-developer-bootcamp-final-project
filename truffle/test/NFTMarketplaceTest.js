@@ -58,7 +58,6 @@ contract("NFTMarketplace", ([deployer, seller, buyer]) => {
     });
 
     it("should fetch the correct quantity of market items", async () => {
-      
       // The below item is listed on the marketplace and sold to the buyer.
       // It should not fetch the below sold item.
       let itemId = 1;

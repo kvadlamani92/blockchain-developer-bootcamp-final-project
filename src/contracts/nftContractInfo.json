@@ -11127,49 +11127,49 @@
     "absolutePath": "/Users/karthikvadlamani/ConsensysDeveloperBootcamp/blockchain-developer-bootcamp-final-project/truffle/contracts/NFTContract.sol",
     "exportedSymbols": {
       "AddressUpgradeable": [
-        2262
+        2273
       ],
       "ContextUpgradeable": [
-        2306
+        2317
       ],
       "CountersUpgradeable": [
-        2380
+        2391
       ],
       "ERC165Upgradeable": [
-        2629
+        2640
       ],
       "ERC721BurnableUpgradeable": [
-        1834
+        1845
       ],
       "ERC721URIStorageUpgradeable": [
-        1990
+        2001
       ],
       "ERC721Upgradeable": [
-        1642
+        1653
       ],
       "IERC165Upgradeable": [
-        2641
+        2652
       ],
       "IERC721MetadataUpgradeable": [
-        2017
+        2028
       ],
       "IERC721ReceiverUpgradeable": [
-        1660
+        1671
       ],
       "IERC721Upgradeable": [
-        1776
+        1787
       ],
       "Initializable": [
-        723
+        734
       ],
       "NFTContract": [
         144
       ],
       "OwnableUpgradeable": [
-        649
+        660
       ],
       "StringsUpgradeable": [
-        2583
+        2594
       ]
     },
     "id": 145,
@@ -11193,7 +11193,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1643,
+        "sourceUnit": 1654,
         "src": "56:80:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -11205,7 +11205,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1991,
+        "sourceUnit": 2002,
         "src": "137:101:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -11217,7 +11217,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1835,
+        "sourceUnit": 1846,
         "src": "239:99:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -11229,7 +11229,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 650,
+        "sourceUnit": 661,
         "src": "339:75:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -11241,7 +11241,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 2381,
+        "sourceUnit": 2392,
         "src": "415:75:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -11254,7 +11254,7 @@
               "id": 45,
               "name": "ERC721Upgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1642,
+              "referencedDeclaration": 1653,
               "src": "755:17:1"
             },
             "id": 46,
@@ -11266,7 +11266,7 @@
               "id": 47,
               "name": "ERC721URIStorageUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1990,
+              "referencedDeclaration": 2001,
               "src": "774:27:1"
             },
             "id": 48,
@@ -11278,7 +11278,7 @@
               "id": 49,
               "name": "ERC721BurnableUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1834,
+              "referencedDeclaration": 1845,
               "src": "803:25:1"
             },
             "id": 50,
@@ -11290,7 +11290,7 @@
               "id": 51,
               "name": "OwnableUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 649,
+              "referencedDeclaration": 660,
               "src": "830:18:1"
             },
             "id": 52,
@@ -11299,16 +11299,16 @@
           }
         ],
         "contractDependencies": [
-          649,
-          723,
-          1642,
-          1776,
-          1834,
-          1990,
-          2017,
-          2306,
-          2629,
-          2641
+          660,
+          734,
+          1653,
+          1787,
+          1845,
+          2001,
+          2028,
+          2317,
+          2640,
+          2652
         ],
         "contractKind": "contract",
         "documentation": {
@@ -11321,16 +11321,16 @@
         "id": 144,
         "linearizedBaseContracts": [
           144,
-          649,
-          1834,
-          1990,
-          1642,
-          2017,
-          1776,
-          2629,
-          2641,
-          2306,
-          723
+          660,
+          1845,
+          2001,
+          1653,
+          2028,
+          1787,
+          2640,
+          2652,
+          2317,
+          734
         ],
         "name": "NFTContract",
         "nameLocation": "740:11:1",
@@ -11342,7 +11342,7 @@
               "id": 53,
               "name": "CountersUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2380,
+              "referencedDeclaration": 2391,
               "src": "862:19:1"
             },
             "nodeType": "UsingForDirective",
@@ -11354,13 +11354,13 @@
                 "id": 54,
                 "name": "CountersUpgradeable.Counter",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2312,
+                "referencedDeclaration": 2323,
                 "src": "886:27:1"
               },
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2323,
               "src": "886:27:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$2323_storage_ptr",
                 "typeString": "struct CountersUpgradeable.Counter"
               }
             }
@@ -11383,7 +11383,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Counter_$2312_storage",
+              "typeIdentifier": "t_struct$_Counter_$2323_storage",
               "typeString": "struct CountersUpgradeable.Counter"
             },
             "typeName": {
@@ -11393,13 +11393,13 @@
                 "id": 58,
                 "name": "CountersUpgradeable.Counter",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2312,
+                "referencedDeclaration": 2323,
                 "src": "986:27:1"
               },
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2323,
               "src": "986:27:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$2323_storage_ptr",
                 "typeString": "struct CountersUpgradeable.Counter"
               }
             },
@@ -11462,7 +11462,7 @@
                       "name": "__ERC721_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 852,
+                      "referencedDeclaration": 863,
                       "src": "1099:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
@@ -11497,7 +11497,7 @@
                       "name": "__ERC721URIStorage_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1858,
+                      "referencedDeclaration": 1869,
                       "src": "1140:23:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -11532,7 +11532,7 @@
                       "name": "__ERC721Burnable_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1803,
+                      "referencedDeclaration": 1814,
                       "src": "1175:21:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -11567,7 +11567,7 @@
                       "name": "__Ownable_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 553,
+                      "referencedDeclaration": 564,
                       "src": "1208:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -11607,7 +11607,7 @@
                   "id": 62,
                   "name": "initializer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 697,
+                  "referencedDeclaration": 708,
                   "src": "1070:11:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -11687,7 +11687,7 @@
                         "referencedDeclaration": 60,
                         "src": "1460:15:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$2312_storage",
+                          "typeIdentifier": "t_struct$_Counter_$2323_storage",
                           "typeString": "struct CountersUpgradeable.Counter storage ref"
                         }
                       },
@@ -11698,10 +11698,10 @@
                       "lValueRequested": false,
                       "memberName": "current",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2324,
+                      "referencedDeclaration": 2335,
                       "src": "1460:23:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$2312_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$2323_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$2323_storage_ptr_$",
                         "typeString": "function (struct CountersUpgradeable.Counter storage pointer) view returns (uint256)"
                       }
                     },
@@ -11736,7 +11736,7 @@
                         "referencedDeclaration": 60,
                         "src": "1495:15:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$2312_storage",
+                          "typeIdentifier": "t_struct$_Counter_$2323_storage",
                           "typeString": "struct CountersUpgradeable.Counter storage ref"
                         }
                       },
@@ -11747,10 +11747,10 @@
                       "lValueRequested": false,
                       "memberName": "increment",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2338,
+                      "referencedDeclaration": 2349,
                       "src": "1495:25:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$2312_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$2323_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$2323_storage_ptr_$",
                         "typeString": "function (struct CountersUpgradeable.Counter storage pointer)"
                       }
                     },
@@ -11816,10 +11816,10 @@
                       "name": "_safeMint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1302,
-                        1331
+                        1313,
+                        1342
                       ],
-                      "referencedDeclaration": 1302,
+                      "referencedDeclaration": 1313,
                       "src": "1541:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -11888,7 +11888,7 @@
                       "name": "_setTokenURI",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1955,
+                      "referencedDeclaration": 1966,
                       "src": "1574:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
@@ -12006,8 +12006,8 @@
           },
           {
             "baseFunctions": [
-              1439,
-              1985
+              1450,
+              1996
             ],
             "body": {
               "id": 125,
@@ -12056,7 +12056,7 @@
                       "lValueRequested": false,
                       "memberName": "_burn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1985,
+                      "referencedDeclaration": 1996,
                       "src": "1925:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
@@ -12105,14 +12105,14 @@
                   "id": 115,
                   "name": "ERC721Upgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1642,
+                  "referencedDeclaration": 1653,
                   "src": "1863:17:1"
                 },
                 {
                   "id": 116,
                   "name": "ERC721URIStorageUpgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1990,
+                  "referencedDeclaration": 2001,
                   "src": "1882:27:1"
                 }
               ],
@@ -12166,8 +12166,8 @@
           },
           {
             "baseFunctions": [
-              1015,
-              1933
+              1026,
+              1944
             ],
             "body": {
               "id": 142,
@@ -12216,7 +12216,7 @@
                       "lValueRequested": false,
                       "memberName": "tokenURI",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1933,
+                      "referencedDeclaration": 1944,
                       "src": "2310:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_string_memory_ptr_$",
@@ -12267,14 +12267,14 @@
                   "id": 131,
                   "name": "ERC721Upgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1642,
+                  "referencedDeclaration": 1653,
                   "src": "2209:17:1"
                 },
                 {
                   "id": 132,
                   "name": "ERC721URIStorageUpgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1990,
+                  "referencedDeclaration": 2001,
                   "src": "2228:27:1"
                 }
               ],
@@ -12365,49 +12365,49 @@
     "absolutePath": "/Users/karthikvadlamani/ConsensysDeveloperBootcamp/blockchain-developer-bootcamp-final-project/truffle/contracts/NFTContract.sol",
     "exportedSymbols": {
       "AddressUpgradeable": [
-        2262
+        2273
       ],
       "ContextUpgradeable": [
-        2306
+        2317
       ],
       "CountersUpgradeable": [
-        2380
+        2391
       ],
       "ERC165Upgradeable": [
-        2629
+        2640
       ],
       "ERC721BurnableUpgradeable": [
-        1834
+        1845
       ],
       "ERC721URIStorageUpgradeable": [
-        1990
+        2001
       ],
       "ERC721Upgradeable": [
-        1642
+        1653
       ],
       "IERC165Upgradeable": [
-        2641
+        2652
       ],
       "IERC721MetadataUpgradeable": [
-        2017
+        2028
       ],
       "IERC721ReceiverUpgradeable": [
-        1660
+        1671
       ],
       "IERC721Upgradeable": [
-        1776
+        1787
       ],
       "Initializable": [
-        723
+        734
       ],
       "NFTContract": [
         144
       ],
       "OwnableUpgradeable": [
-        649
+        660
       ],
       "StringsUpgradeable": [
-        2583
+        2594
       ]
     },
     "id": 145,
@@ -12431,7 +12431,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1643,
+        "sourceUnit": 1654,
         "src": "56:80:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12443,7 +12443,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1991,
+        "sourceUnit": 2002,
         "src": "137:101:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12455,7 +12455,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 1835,
+        "sourceUnit": 1846,
         "src": "239:99:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12467,7 +12467,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 650,
+        "sourceUnit": 661,
         "src": "339:75:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12479,7 +12479,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 145,
-        "sourceUnit": 2381,
+        "sourceUnit": 2392,
         "src": "415:75:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12492,7 +12492,7 @@
               "id": 45,
               "name": "ERC721Upgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1642,
+              "referencedDeclaration": 1653,
               "src": "755:17:1"
             },
             "id": 46,
@@ -12504,7 +12504,7 @@
               "id": 47,
               "name": "ERC721URIStorageUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1990,
+              "referencedDeclaration": 2001,
               "src": "774:27:1"
             },
             "id": 48,
@@ -12516,7 +12516,7 @@
               "id": 49,
               "name": "ERC721BurnableUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1834,
+              "referencedDeclaration": 1845,
               "src": "803:25:1"
             },
             "id": 50,
@@ -12528,7 +12528,7 @@
               "id": 51,
               "name": "OwnableUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 649,
+              "referencedDeclaration": 660,
               "src": "830:18:1"
             },
             "id": 52,
@@ -12537,16 +12537,16 @@
           }
         ],
         "contractDependencies": [
-          649,
-          723,
-          1642,
-          1776,
-          1834,
-          1990,
-          2017,
-          2306,
-          2629,
-          2641
+          660,
+          734,
+          1653,
+          1787,
+          1845,
+          2001,
+          2028,
+          2317,
+          2640,
+          2652
         ],
         "contractKind": "contract",
         "documentation": {
@@ -12559,16 +12559,16 @@
         "id": 144,
         "linearizedBaseContracts": [
           144,
-          649,
-          1834,
-          1990,
-          1642,
-          2017,
-          1776,
-          2629,
-          2641,
-          2306,
-          723
+          660,
+          1845,
+          2001,
+          1653,
+          2028,
+          1787,
+          2640,
+          2652,
+          2317,
+          734
         ],
         "name": "NFTContract",
         "nameLocation": "740:11:1",
@@ -12580,7 +12580,7 @@
               "id": 53,
               "name": "CountersUpgradeable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2380,
+              "referencedDeclaration": 2391,
               "src": "862:19:1"
             },
             "nodeType": "UsingForDirective",
@@ -12592,13 +12592,13 @@
                 "id": 54,
                 "name": "CountersUpgradeable.Counter",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2312,
+                "referencedDeclaration": 2323,
                 "src": "886:27:1"
               },
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2323,
               "src": "886:27:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$2323_storage_ptr",
                 "typeString": "struct CountersUpgradeable.Counter"
               }
             }
@@ -12621,7 +12621,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Counter_$2312_storage",
+              "typeIdentifier": "t_struct$_Counter_$2323_storage",
               "typeString": "struct CountersUpgradeable.Counter"
             },
             "typeName": {
@@ -12631,13 +12631,13 @@
                 "id": 58,
                 "name": "CountersUpgradeable.Counter",
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 2312,
+                "referencedDeclaration": 2323,
                 "src": "986:27:1"
               },
-              "referencedDeclaration": 2312,
+              "referencedDeclaration": 2323,
               "src": "986:27:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Counter_$2312_storage_ptr",
+                "typeIdentifier": "t_struct$_Counter_$2323_storage_ptr",
                 "typeString": "struct CountersUpgradeable.Counter"
               }
             },
@@ -12700,7 +12700,7 @@
                       "name": "__ERC721_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 852,
+                      "referencedDeclaration": 863,
                       "src": "1099:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$returns$__$",
@@ -12735,7 +12735,7 @@
                       "name": "__ERC721URIStorage_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1858,
+                      "referencedDeclaration": 1869,
                       "src": "1140:23:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -12770,7 +12770,7 @@
                       "name": "__ERC721Burnable_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1803,
+                      "referencedDeclaration": 1814,
                       "src": "1175:21:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -12805,7 +12805,7 @@
                       "name": "__Ownable_init",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 553,
+                      "referencedDeclaration": 564,
                       "src": "1208:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
@@ -12845,7 +12845,7 @@
                   "id": 62,
                   "name": "initializer",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 697,
+                  "referencedDeclaration": 708,
                   "src": "1070:11:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -12925,7 +12925,7 @@
                         "referencedDeclaration": 60,
                         "src": "1460:15:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$2312_storage",
+                          "typeIdentifier": "t_struct$_Counter_$2323_storage",
                           "typeString": "struct CountersUpgradeable.Counter storage ref"
                         }
                       },
@@ -12936,10 +12936,10 @@
                       "lValueRequested": false,
                       "memberName": "current",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2324,
+                      "referencedDeclaration": 2335,
                       "src": "1460:23:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$2312_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Counter_$2323_storage_ptr_$returns$_t_uint256_$bound_to$_t_struct$_Counter_$2323_storage_ptr_$",
                         "typeString": "function (struct CountersUpgradeable.Counter storage pointer) view returns (uint256)"
                       }
                     },
@@ -12974,7 +12974,7 @@
                         "referencedDeclaration": 60,
                         "src": "1495:15:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Counter_$2312_storage",
+                          "typeIdentifier": "t_struct$_Counter_$2323_storage",
                           "typeString": "struct CountersUpgradeable.Counter storage ref"
                         }
                       },
@@ -12985,10 +12985,10 @@
                       "lValueRequested": false,
                       "memberName": "increment",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2338,
+                      "referencedDeclaration": 2349,
                       "src": "1495:25:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$2312_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$2312_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Counter_$2323_storage_ptr_$returns$__$bound_to$_t_struct$_Counter_$2323_storage_ptr_$",
                         "typeString": "function (struct CountersUpgradeable.Counter storage pointer)"
                       }
                     },
@@ -13054,10 +13054,10 @@
                       "name": "_safeMint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1302,
-                        1331
+                        1313,
+                        1342
                       ],
-                      "referencedDeclaration": 1302,
+                      "referencedDeclaration": 1313,
                       "src": "1541:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -13126,7 +13126,7 @@
                       "name": "_setTokenURI",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1955,
+                      "referencedDeclaration": 1966,
                       "src": "1574:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
@@ -13244,8 +13244,8 @@
           },
           {
             "baseFunctions": [
-              1439,
-              1985
+              1450,
+              1996
             ],
             "body": {
               "id": 125,
@@ -13294,7 +13294,7 @@
                       "lValueRequested": false,
                       "memberName": "_burn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1985,
+                      "referencedDeclaration": 1996,
                       "src": "1925:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
@@ -13343,14 +13343,14 @@
                   "id": 115,
                   "name": "ERC721Upgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1642,
+                  "referencedDeclaration": 1653,
                   "src": "1863:17:1"
                 },
                 {
                   "id": 116,
                   "name": "ERC721URIStorageUpgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1990,
+                  "referencedDeclaration": 2001,
                   "src": "1882:27:1"
                 }
               ],
@@ -13404,8 +13404,8 @@
           },
           {
             "baseFunctions": [
-              1015,
-              1933
+              1026,
+              1944
             ],
             "body": {
               "id": 142,
@@ -13454,7 +13454,7 @@
                       "lValueRequested": false,
                       "memberName": "tokenURI",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1933,
+                      "referencedDeclaration": 1944,
                       "src": "2310:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_string_memory_ptr_$",
@@ -13505,14 +13505,14 @@
                   "id": 131,
                   "name": "ERC721Upgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1642,
+                  "referencedDeclaration": 1653,
                   "src": "2209:17:1"
                 },
                 {
                   "id": 132,
                   "name": "ERC721URIStorageUpgradeable",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1990,
+                  "referencedDeclaration": 2001,
                   "src": "2228:27:1"
                 }
               ],
@@ -13702,12 +13702,12 @@
         }
       },
       "links": {},
-      "address": "0xDc89d0597688c46543eb213131e14C8e9C130aD8",
-      "transactionHash": "0x648bcdd110b315e76ec7995ea27c48724dee5890631b4c1c65a71a8917e01902"
+      "address": "0x23a85b53194Ce2ef8FF3b6233f856AEDb6D3062c",
+      "transactionHash": "0x7639d57598583a00888593d52a5848c58927e229aea3b9852b3b5f1cc003070e"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2022-01-15T11:58:14.108Z",
+  "updatedAt": "2022-01-16T20:44:55.485Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "kvadlamani92",

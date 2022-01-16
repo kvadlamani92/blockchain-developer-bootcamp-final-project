@@ -1,11 +1,13 @@
 export const networkCollections = {
   "0x13881": [
-    //Add Your Collections here
+    // Update the NFT contract address below after a new contract deployment 
+    // for the collection to show up on the marketplace homepage
     {
       image: "https://ipfs.moralis.io:2053/ipfs/QmYvKechmn2wWBLXwz4ZvPBJmLxshe1RpeDPGAjSZhZbHd",
       name: "New Collection",
-      addrs: "0xDc89d0597688c46543eb213131e14C8e9C130aD8",
+      addrs: "0x23a85b53194Ce2ef8FF3b6233f856AEDb6D3062c",
     },
+    // Test collections
     {
       image:
         "https://lh3.googleusercontent.com/BWCni9INm--eqCK800BbRkL10zGyflxfPwTHt4XphMSWG3XZvPx1JyGdfU9vSor8K046DJg-Q8Y4ioUlWHiCZqgR_L00w4vcbA-w=s0",
