@@ -1,4 +1,4 @@
-ERC721 Contract (Mumbai testnet): 0x23a85b53194Ce2ef8FF3b6233f856AEDb6D3062c
-Marketplace Contract (Mumbai testnet): 0x5ADe01307Ff9eaa9F31Ec9B9B370cE02be6A497a
+ERC721 Contract (Mumbai testnet): 0xf2202297590BE49De573a81309fD165169024E07
+Marketplace Contract (Mumbai testnet): 0xC1aDd3B2C7785653828c35e56ec216c604d3a560
 
 GitHub Repository: https://github.com/kvadlamani92/blockchain-developer-bootcamp-final-project.git

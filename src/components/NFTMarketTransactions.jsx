@@ -151,29 +151,3 @@ function NFTMarketTransactions() {
 }
 
 export default NFTMarketTransactions;
-const columns = [
-  {
-    title: "Date",
-    dataIndex: "date",
-    key: "date",
-  },
-  {
-    title: "Item",
-    key: "item",
-
-  },
-  {
-    title: "Collection",
-    key: "collection",
-  },
-  {
-    title: "Transaction Status",
-    key: "tags",
-    dataIndex: "tags",
-  },
-  {
-    title: "Price",
-    key: "price",
-    dataIndex: "price",
-  }
-];

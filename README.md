@@ -7,7 +7,7 @@ NFT marketplace created with Moralis and react-js framework. It is a place where
 
 Requirements: Metamask browser extension installed and connected to the Polygon Mumbai Test Network
 
-### dApp Walkthrough: [NFTMarketplace Demo](https://www.loom.com/share/58bff5149fe349f0a0458167f144755d)
+### dApp Walkthrough: [NFTMarketplace Demo](https://www.loom.com/share/f0555e9784a748158af9a63626081106)
 
 ### Directory Structure
 - `public/` front end files
@@ -30,7 +30,7 @@ brew install git
 ```
 5. Install Truffle
 ```
-npm install -g truffle`
+npm install -g truffle
 ```
 6. Download or install Ganache\
 Download [Ganache GUI](https://www.trufflesuite.com/ganache)\
@@ -65,21 +65,17 @@ To run the tests, run
 truffle test
 ```
 
-Create a .env file and add the following environment variable for the deployment to Polygon Mumbai testnet
-```
-MNEMONIC=<paste_mnemonic_here>
-```
-
 Migrate the project to the Polygon Mumbai testnet and copy the ABI json files to the location where the react components can pick it up using
 ```
 node scripts/deployContract.js
 ```
 
-✏ Provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)) in the .env file created in the above step
+✏ Create a new .env file and provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)) and MNEMONIC from truffle console
 Example:
 ```
 REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
 REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.usemoralis.com:2053/server
+MNEMONIC=<paste_mnemonic_here>
 ```
 
 🔎 Locate the MoralisDappProvider in `src/providers/MoralisDappProvider/MoralisDappProvider.js` and contract address and ABI are automatically populated from the `src/contracts/contractInfo.json`
