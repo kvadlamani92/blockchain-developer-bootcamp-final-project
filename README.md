@@ -1,7 +1,7 @@
 # NFT Marketplace dApp
 
 ## Overview
-NFT marketplace created with Moralis and react-js framework. It is a place where one can create NFT, list it on marketplace and buy the available NFTs.
+NFT marketplace created with Solidity, ReactJS and Moralis Web3 framework. It is a place where one can create NFT, list it on marketplace and buy the available NFTs. One can burn their own NFTs as well.
 
 ### Live dApp Deployed on Polygon Mumbai network: [NFTMarketplace](https://nft-marketplace-usemoralis.netlify.app/)
 
